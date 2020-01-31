@@ -14,17 +14,21 @@ const inventors = [
 ];
 
 const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600))
-    
 console.table(fifteen);
 
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
 console.log(fullNames);
 
-
-
 const ordered = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
-
 console.table(ordered);
+
+const totalYears = inventors.reduce((total, inventor) => {
+    return total + (inventor.passed - inventor.year);
+},0);
+console.log(totalYears);
+
+
+
 
 const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
