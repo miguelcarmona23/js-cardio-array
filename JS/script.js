@@ -52,3 +52,12 @@ const alpha = people.sort((lastOne, nextOne) => {
     return aLast > bLast ? 1 : -1;
 });
 console.log(alpha)
+
+const transportation = data.reduce(function(obj, item) {
+    if(!obj[item]) {
+        obj[item]=0;
+    }
+    obj[item]++;
+    return obj;
+}, {});
+console.log(transportation);
