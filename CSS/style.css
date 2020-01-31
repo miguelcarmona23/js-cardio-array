@@ -9,8 +9,10 @@ body {
 
 
 h1 {
-     line-height: 400px;
-     text-align: center;
-     color: white;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 400px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    padding-top: 200px;
 }
