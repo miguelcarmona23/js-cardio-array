@@ -1,6 +1,12 @@
 body {
-    background: teal;
+    background: url("https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 1920 1080px;
+    background-attachment: fixed;
+    background-position: stretch;
+    background-size: cover;
 }
+
 
 h1 {
      line-height: 400px;
